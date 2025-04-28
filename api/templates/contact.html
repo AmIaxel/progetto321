@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Contattaci{% endblock %}
+
+{% block content %}
+<h2>Contattaci</h2>
+<p>Hai domande o richieste? Compila il modulo qui sotto:</p>
+<form action="{{ url_for('send_contact') }}" method="POST">
+    <input type="text" name="name" placeholder="Il tuo nome" required>
+    <input type="email" name="email" placeholder="La tua email" required>
+    <textarea name="message" placeholder="Il tuo messaggio" rows="6"
+        required></textarea>
+    <button type="submit">Invia Messaggio</button>
+</form>
+{% endblock %}

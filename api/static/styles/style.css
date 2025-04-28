@@ -1,0 +1,86 @@
+/* Stile generale */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenitore del form */
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titolo */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Input fields */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Stile specifico per i campi input */
+input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Bottone di registrazione */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+/* Effetto hover sul bottone */
+button:hover {
+  background: #218838;
+}
+
+/* Link di accesso */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}

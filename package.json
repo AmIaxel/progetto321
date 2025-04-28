@@ -1,0 +1,19 @@
+{
+  "name": "progetto321",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build-css": "npx postcss static/styles/tailwind.css -o static/styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.1"
+  },
+  "description": ""
+}

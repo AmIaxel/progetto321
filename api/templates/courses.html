@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}I nostri corsi{% endblock %}
+
+{% block content %}
+<h2>I nostri corsi</h2>
+{% if courses %}
+<section class="courses-container">
+    {% for course in courses %}
+    <div class="course">
+        <h3>{{ course.name }}</h3>
+        <p>{{ course.description }}</p>
+        <form action="{{ url_for('add_to_cart', course_id=course.id) }}"
+            method="POST">
+            <button type="submit">Aggiungi al carrello</button>
+        </form>
+    </div>
+    {% endfor %}
+</section>
+{% else %}
+<p style="text-align:center;">Nessun corso disponibile al momento.</p>
+{% endif %}
+{% endblock %}
